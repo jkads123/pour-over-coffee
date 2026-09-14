@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手沖咖啡教學 - 完美萃取指南</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>☕ 手沖咖啡教學指南</h1>
+        <p>跟著步驟，沖出一杯香醇的好咖啡</p>
+    </header>
+
+    <main class="container">
+        <!-- 比例計算器 -->
+        <section class="calculator-card">
+            <h2>⚖️ 粉水比快速計算器</h2>
+            <div class="calc-group">
+                <label for="coffee-weight">咖啡粉重量 (克 g)：</label>
+                <input type="number" id="coffee-weight" value="15" min="1" max="100">
+            </div>
+            <div class="calc-group">
+                <label for="ratio">粉水比例 (1 : X)：</label>
+                <input type="number" id="ratio" value="15" min="10" max="20">
+            </div>
+            <div class="calc-result">
+                建議總水量：<span id="water-result">225</span> ml
+            </div>
+        </section>
+
+        <!-- 手沖步驟展示 -->
+        <section class="steps-section">
+            <h2>📋 手沖步驟說明</h2>
+            <div id="steps-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for Coffee Lovers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
